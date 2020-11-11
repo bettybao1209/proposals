@@ -23,7 +23,7 @@ In the field definitions below, we provide both the definitions of the fields as
 
 ==NefFile Structure==
 
-A <code>nef</code> file consists of a single <code>NefFile/code> structure:
+A <code>nef</code> file consists of a single <code>NefFile</code> structure:
 
 {| class="wikitable sortable" style="width: auto; text-align: center; font-size: smaller; table-layout: fixed;"
 !<nowiki>#</nowiki>
