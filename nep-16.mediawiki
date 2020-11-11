@@ -25,23 +25,31 @@ In the field definitions below, we provide both the definitions of the fields as
 
 A <code>nef</code> file consists of a single <code>NefFile/code> structure:
 
-{|
-|4 bytes
-|magic
+{| class="wikitable sortable" style="width: auto; text-align: center; font-size: smaller; table-layout: fixed;"
+!<nowiki>#</nowiki>
+!size
+!item
 |-
-|32 bytes
-|compile
+| [1]
+| 4 bytes
+| magic
 |-
-|16 bytes
-|version
+| [2]
+| 32 bytes
+| compile
 |-
-|var bytes
-|abi 
+| [3]
+| 16 bytes
+| version
 |-
-|var bytes
-|script 
+| [4]
+| var bytes
+| abi
+|-
+| [5]
+| var bytes
+| script
 |}
-
 
 ===magic===
 
