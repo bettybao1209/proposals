@@ -9,7 +9,7 @@
 
 ==Abstract==
 
-A <code>NefFile/code> is a file meeting the standard format for a valid NEO executable file. It provides the basic information about the script, including the compiler and version.
+A <code>NefFile</code> is a file meeting the standard format for a valid NEO executable file. It provides the basic information about the script, including the compiler and version.
 
 This NEP describes the NEF standard for NEO smart contracts.
 
