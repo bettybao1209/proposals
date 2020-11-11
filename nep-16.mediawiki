@@ -30,23 +30,23 @@ A <code>nef</code> file consists of a single <code>NefFile</code> structure:
 !size
 !item
 |-
-| [1]
+| 1
 | 4 bytes
 | magic
 |-
-| [2]
+| 2
 | 32 bytes
 | compile
 |-
-| [3]
+| 3
 | 16 bytes
 | version
 |-
-| [4]
+| 4
 | var bytes
 | abi
 |-
-| [5]
+| 5
 | var bytes
 | script
 |}
