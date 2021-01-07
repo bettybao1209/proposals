@@ -98,11 +98,11 @@ The value of the <code>callFlags</code> is used to denote the calling permission
 |-
 | AllowNotify || 0b00001000 || may send the notification
 |-
-| States || ReadStates|WriteStates=0b00000011 ||  may read and write the storage
+| States || 0b00000011 ||  may read and write the storage
 |-
-| ReadOnly || ReadStates|AllowCall=0b00000101 || may read the storage and call methods in other contracts
+| ReadOnly || 0b00000101 || may read the storage and call methods in other contracts
 |-
-| All || States|AllowCall|AllowNotify=0b00001111 || equipped with all permissions above
+| All || 0b00001111 || equipped with all permissions above
 |}
 
 All bits of the <code>callFlags</code> item not assigned in the table are reserved for future use. They should be set to zero in generated <code>nef</code> files.
