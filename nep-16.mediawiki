@@ -86,41 +86,23 @@ The <code>hasReturnValue</code> item is a boolean value that indicates whether t
 The value of the <code>callFlags</code> is used to denote the calling permission to the method. The Interpretation of each flag, when set, is specified in the following table:
 
 {|
-!Flag Name
-!Value
-!Interpretation
+!Flag Name !Value !Interpretation
 |-
-| None
-| 0
-| called without other permissions
+| None || 0 || called without other permissions
 |-
-| ReadStates
-| 0b00000001
-| may read the storage
+| ReadStates || 0b00000001 || may read the storage
 |-
-| WriteStates
-| 0b00000010
-| may write the storage
+| WriteStates || 0b00000010 || may write the storage
 |-
-| AllowCall
-| 0b00000100
-| allow to call methods in other contracts
+| AllowCall || 0b00000100 || allow to call methods in other contracts
 |-
-| AllowNotify
-| 0b00001000
-| may send the notification
+| AllowNotify || 0b00001000 || may send the notification
 |-
-| States
-| ReadStates | WriteStates = 0b00000011
-| may read and write the storage
+| States || ReadStates | WriteStates = 0b00000011 ||  may read and write the storage
 |-
-| ReadOnly
-| ReadStates | AllowCall = 0b00000101
-| may read the storage and call methods in other contracts
+| ReadOnly || ReadStates | AllowCall = 0b00000101 || may read the storage and call methods in other contracts
 |-
-| All
-| States | AllowCall | AllowNotify = 0b00001111
-| equipped with all permissions above
+| All || States | AllowCall | AllowNotify = 0b00001111 || equipped with all permissions above
 |}
 
 All bits of the <code>callFlags</code> item not assigned in the table are reserved for future use. They should be set to zero in generated <code>nef</code> files.
