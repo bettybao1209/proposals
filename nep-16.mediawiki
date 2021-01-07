@@ -67,12 +67,9 @@ Each entry in the <code>tokens</code> item must be a <code>method_token</code> s
 
 ====hash====
 
-The <code>hash</code> item stores the contract hash in a 20-byte array.
-
 ====method====
 
 The <code>method</code> item is used to represent constant string values of the method name. It has s single-byte length prefix and up to 32 byte string contents encoded in UTF-8.
- 
 ====parametersCount====
 
 The <code>parametersCount</code> denotes the number of formal parameters of the method.
