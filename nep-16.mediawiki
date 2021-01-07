@@ -67,7 +67,7 @@ Each entry in the <code>tokens</code> item must be a <code>method_token</code> s
 
 ====hash====
 
-
+The <code>hash</code> item stores the contract hash in a 20-byte array.
 
 ====method====
 
@@ -83,7 +83,7 @@ The <code>hasReturnValue</code> item is a boolean value that indicates whether t
 
 ====callFlags====
 
-The value of the <code>callFlags</code> is used to denote the calling permission to the method. The Interpretation of each flag, when set, is specified in the following table:
+The value of the <code>callFlags</code> item is a mask of flags used to denote the calling permission to the method. The Interpretation of each flag, when set, is specified in the following table:
 
 {|
 !Flag Name !!Value !!Interpretation
@@ -113,4 +113,4 @@ The value of <code>script</code> stores the raw VM opcodes. The data should be s
 
 ===checksum===
 
-The <code>checksum</code> item is used not only to ensure a corrupt-free transmission, but also to ensure that the file has not been tampered with. It is computed by using the SHA256 algorithm to hash the serialised `NefFile` excluding `checksum` twice, and converting the result into a 32-bit unsigned integer.
+The <code>checksum</code> item is used not only to ensure a corrupt-free transmission, but also to ensure that the file has not been tampered with. It is computed by using the SHA256 algorithm to hash the serialised NefFile excluding checksum twice, and converting the result into a 32-bit unsigned integer.
